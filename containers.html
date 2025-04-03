@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="style.css">
         <title>Title</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
@@ -17,71 +16,74 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+ 
+        <link rel="stylesheet" href="style.css">
     </head>
  
     <body>
  
-      <div class= "container mt-5 p-5 bg-light rounded-3 shadow-lg">
-        <h3>Default Containers</h3>
-        <h4>This container is always on the center.
-        notice the equal margin on both sides.</h4>
-        <p>Lorem psum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.
-             Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.
-              Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt est et lobortis interdum.
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris
-                Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 
-                Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt est et lobortis interdum.
-        </p>
+        <body>
  
-      </div>
-     
-     
-      <div class= "container-fluid m-5 ">
-        <h3>Fluid Containers</h3>
-        <h4>This container is always on the center.
-        notice the equal margin on both sides.</h4>
-        <p>Lorem psum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.
-             Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 
-             Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt est et lobortis interdum. 
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. 
-             Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.
-              Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt est et lobortis interdum.
-        </p>
- 
-      </div>
-     
-      <div class="container">
-        <h3>Row and Cols</h3>
-        <div class="row g-0">
-            <div class="col">
-                <div class="custom-box">Box 1</div>
-            </div>
-            <div class="col">
-                <div class="custom-box">Box 2</div>
-            </div>
-            <div class="col">
-                <div class="custom-box">Box 3</div>
-            </div>
-            <div class="col">
-                <div class="custom-box">Box 4</div>
+           
+            <div class="container m-5 shadow bg-light p-5 rounded-5">
+                <h3>Default Container</h3>
+                <h4>this container is always on the center</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci, vero architecto delectus, dolore animi ipsa sapiente consequuntur aliquam necessitatibus quaerat? Autem facilis laborum minima consequatur similique itaque eaque corporis.</p>
+            </div>      
+           
+            <div class="container m-5">
+                <h3>Fluid Container</h3>
+                <h4>this container is always on the center</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci, vero architecto delectus, dolore animi ipsa sapiente consequuntur aliquam necessitatibus quaerat? Autem facilis laborum minima consequatur similique itaque eaque corporis.</p>
             </div>
    
+     
+           
    
- 
+       
         <div class="container">
-            <h3>col-sm-6</h3>
             <div class="row g-0">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="custom-box">Box 1</div>
-                 
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-3">
-                    <div class="custom-box">Box 2</div>
-                   
-                </div>
-            <div class="col-lg-4 col-md-12 col-sm-9">
-                <div class="custom-box">Box 3</div>
  
+                <div class="col lg-4 col-md-12">
+                    <div class="custom-box"> Box 1 </div>
+                </div>
+                <div class="col lg-4 col-md-12">
+                    <div class="custom-box"> Box 2 </div>
+                </div>
+                <div class="col lg-4 col-md-12 col-sm-9">
+                    <div class="custom-box"> Box 3 </div>
+                </div>
+                <div class="col lg-4 col-md-12">
+                    <div class="custom-box"> Box 4 </div>
+                </div>
+ 
+            </div>
+        </div>
+ 
+        <!-- shorcut: div.col*4>div.custom-box -->
+        <div class="container-fluid">
+            <h3>Row and Col</h3>
+            <div class="row g-0">
+                <div class="col-sm-16">
+                    <div class="custom-box"> Box 1</div>
+                </div>
+                <div class="col-12">
+                    <!-- 12 Columns yung default hehe -->
+                    <div class="custom-box"> Box 2 </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="custom-box"> Box 3 </div>
+                    </div>
+            </div>
+        </div>
+        <div class="container my-4 d-flex justify-content-center">
+            <a href="colors.html" class="btn btn-primary">Go To Colors</a>
+        </div>
+ 
+       
+ 
+ 
+        <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
